@@ -1,12 +1,14 @@
 import { ScrollView, StyleSheet, View } from "react-native";
 import { Colors } from "@/constants/Colors";
 import { ThemedText } from "@/components/ThemedText";
+import RecentMeetings from "@/components/RecentMeetings";
 
 export default function () {
   return (
     <ScrollView style={styles.scrollView}>
       <View style={styles.view}>
         <ThemedText type="title">Meeting History</ThemedText>
+        <RecentMeetings />
       </View>
     </ScrollView>
   );
